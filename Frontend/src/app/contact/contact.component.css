@@ -1,0 +1,10 @@
+/* .con{
+    background-image: url(/assets/images/contact.jpeg);
+    background-repeat: no-repeat;
+background-size: cover;} */
+.bg-image {
+    background-image: url('/assets/images/contact.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }

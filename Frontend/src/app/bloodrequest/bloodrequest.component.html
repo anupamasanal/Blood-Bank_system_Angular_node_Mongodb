@@ -1,0 +1,85 @@
+<div class="container-fluid dall">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-8">
+                <div class="card  text-white" style="border-radius: 1rem; margin-top: 50px; background-color: skyblue;">
+                    <div class="card-body p-5 text-center">
+                        <div class="mb-md-5 mt-md-4 pb-5">
+                            <form #bloodrequest="ngForm" (ngSubmit)="onrequestt(bloodrequest)" id="form1">
+                                <h2 class="fw-bold mb-2 text-uppercase">REQUEST FORM</h2>
+                                <p class="text-white-50 mb-5">Please enter your details</p>
+                                <div class="form-outline form-white mb-4 ">
+                                    <input type="text" class="form-control " name="name" #name="ngModel"
+                                        [(ngModel)]="request.selectedUser.name" />
+                                    <label>Name</label>
+                                </div>
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" class="form-control " name="email" #email="ngModel"
+                                        [(ngModel)]="request.selectedUser.email" />
+                                    <label>Email</label>
+                                </div>
+                                <div class="form-outline form-white mb-4">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineRadio1" value="male"
+                                            name="gender" #gender="ngModel" [(ngModel)]="request.selectedUser.gender">
+                                        <label class="form-check-label" for="Gender">male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineRadio2" value="female"
+                                            name="gender" #gender="ngModel" [(ngModel)]="request.selectedUser.gender">
+                                        <label class="form-check-label" for="inlineRadio2">female</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="inlineRadio3" value="other"
+                                            name="gender" #gender="ngModel" [(ngModel)]="request.selectedUser.gender">
+                                        <label class="form-check-label" for="inlineRadio3">other</label>
+                                    </div>
+                                    <label>Gender</label>
+                                </div>
+                                <div class="form-outline form-white mb-4">
+                                    <input type="number" class="form-control " name="phone" #phone="ngModel"
+                                        [(ngModel)]="request.selectedUser.phone_number" />
+                                    <label>Phone Number</label>
+                                </div>
+                                <div class="form-outline form-white mb-4">
+                                    <input type="text" class="form-control " name="age" #age="ngModel"
+                                        [(ngModel)]="request.selectedUser.age" />
+                                    <label>Age</label>
+                                </div>
+                                <div class="form-outline form-white mb-4">
+                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example"
+                                        name="bloodgroup" #place="ngModel"
+                                        [(ngModel)]="request.selectedUser.bloodgroup">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">A+ve</option>
+                                        <option value="2">A-ve</option>
+                                        <option value="3">B+</option>
+                                        <option value="4">B-</option>
+                                        <option value="5">AB+</option>
+                                        <option value="6">AB-</option>
+                                        <option value="7">O+</option>
+                                        <option value="8">O-</option>
+                                    </select>
+                                    <label>Bloodgroup</label>
+                                </div>
+                                <div class="form-outline form-white mb-4">
+                                    <input type="text" class="form-control " name="place" #place="ngModel"
+                                        [(ngModel)]="request.selectedUser.place" />
+                                    <label>Place</label>
+                                </div>
+                                <div class="form-outline form-white mb-4">
+                                    <textarea type="text" class="form-control " name="disease" #disease="ngModel"
+                                        [(ngModel)]="request.selectedUser.disease"></textarea>
+                                    <label>Any disease?</label>
+                                </div>
+                                <button class="btn btn-outline-light btn-lg px-5" type="submit">Submit</button>
+                                <button class="btn btn-outline-light btn-lg px-5" type="button"
+                                    (click)="reset(bloodrequest)">Reset</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

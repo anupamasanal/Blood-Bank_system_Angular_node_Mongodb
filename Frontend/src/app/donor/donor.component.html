@@ -1,0 +1,45 @@
+<!-- <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white" >
+    <div class="position-sticky">
+      
+      <div class="list-group list-group-flush mx-3 mt-4 bg-danger " >
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple hv" ><i
+            class=" fa fa fa-home" aria-hidden="true" ></i><span><b >HOME</b></span></a>
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple hv" ><i
+                class=" fa fa fa-home" aria-hidden="true" ></i><span ><b >HOME</b></span></a>
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple hv"><i
+            class="fas fa-globe fa-fw me-3 fa fa-regular fa-bars"></i><span><b>BLOOD REQUEST</b></span></a>
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple hv"><i
+            class=" fa-fw me-3 fa fa-regular fa-bars"></i><span><b>STATUS</b></span></a>
+        
+               
+      </div> 
+   </div>  
+  </nav> -->
+<div class="container-fluid"
+    style="height: 1200px; background-image: url(https://media.istockphoto.com/id/1319931303/vector/transfusion-of-blood-bag-with-red-blood-cells-on-stand-black-background-with-copy-space.jpg?s=612x612&w=0&k=20&c=qIT3S6y_3dYecEnEF5lnuCuhljkN_I8UbYur7qsxoN8=); background-repeat: no-repeat; background-size: cover;">
+    <div class="row">
+        <div class="col-md-3">
+            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush mx-3 mt-4 ">
+                        <!-- <a href="#" class="list-group-item list-group-item-action py-2 ripple hv" ><i
+                        class=" fa-fw me-3 fa fa-home"  ></i><span><b >HOME</b></span></a> -->
+                        <a routerLink="donorhome" class="list-group-item list-group-item-action py-2 ripple hv"><i
+                                class=" fa-fw me-3 fa fa-home "></i><span><b>HOME</b></span></a>
+                        <a routerLink="blooddonation" class="list-group-item list-group-item-action py-2 ripple hv"><i
+                                class=" fa-fw me-3 fa fa-users"></i><span><b style="font-size: 15px;">BLOOD
+                                    DONATION</b></span></a>
+                        <a routerLink="donationstatus" class="list-group-item list-group-item-action py-2 ripple hv"><i
+                                class=" fa-fw me-3 fa fa-user"></i><span><b>STATUS</b></span></a>
+
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-md-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+</div>

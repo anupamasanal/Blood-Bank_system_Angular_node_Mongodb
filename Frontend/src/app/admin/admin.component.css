@@ -1,0 +1,29 @@
+
+.sidebar {
+    margin-top: 65px;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    /* padding: 58px 0 0;  */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+    background-color:brown;
+    /* border: 1px solid gray; */
+    
+}
+/* .nava{
+   
+} */
+.hv:hover {
+    background:brown;
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+/* .h1{
+    background-image: url("/assets/images/homebg.jpg");
+    
+} */

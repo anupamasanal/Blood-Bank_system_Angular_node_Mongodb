@@ -1,0 +1,64 @@
+<div class="container-fluid con">
+  <div class="container-fluid px-5 my-5" >
+    <div class="row justify-content-center" style="margin-top: 100px;">
+      <div class="col-xl-10">
+        <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+          <div class="card-body p-0">
+            <div class="row g-0">
+              <div class="col-sm-6 d-none d-sm-block bg-image"></div>
+              <div class="col-sm-6 p-4">
+                <div class="text-center">
+                  <div class="h3 fw-light">Contact Form</div>
+                </div>
+                <form #contact="ngForm" (ngSubmit)="onsubmitt(contact)" id="contactForm">
+
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="name" type="text" placeholder="Name" 
+                      name="name" #name="ngModel" [(ngModel)]="serviceform.selectedUser.name" />
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address"
+                       name="email" #email="ngModel" [(ngModel)]="serviceform.selectedUser.email" />
+                    <label for="emailAddress">Email Address</label> 
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"
+                       name="message" #message="ngModel" [(ngModel)]="serviceform.selectedUser.message"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                  <div class="d-grid">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <button class="btn btn-primary" id="submitButton" type="submit" 
+                        style="width: 250px;"
+                        >Submit</button>
+                      </div>
+                      <div class="col-md-6">
+                        <button type="button" class="btn btn-primary" (click)="reset(contact)"
+                        style="width: 250px;"
+                        >reset</button>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="container-fluid" style="margin-top: 400px;">
+  <form #contact="ngForm" (ngSubmit)="onsubmitt(contact)">
+    <input type="text" placeholder="name" name="name" #name="ngModel" [(ngModel)]="serviceform.selectedUser.name">
+    <input type="email" placeholder="email" name="email" #email="ngModel" [(ngModel)]="serviceform.selectedUser.email">
+    <input type="text" placeholder="message" name="message" #message="ngModel"
+      [(ngModel)]="serviceform.selectedUser.message">
+    <button type="submit">submit</button>
+    <button type="button" class="btn btn-primary" (click)="reset(contact)">reset</button>
+  </form>
+</div> -->
